@@ -42,7 +42,7 @@ func main() {
 			os.Exit(1)
 		}
 		author := "John Doe <john@example.com> " // TODO: get author from config
-		if err := commands.Commit(cwd, author, args[0]); err != nil {
+		if err := commands.Commit(cwd, args[0], author); err != nil {
 			fmt.Println("Error committing changes:", err)
 			os.Exit(1)
 		}

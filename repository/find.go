@@ -19,5 +19,6 @@ func FindRoot(start string) (string, error) {
 		if parent == current {
 			return "", os.ErrNotExist
 		}
+		current = parent
 	}
 }
